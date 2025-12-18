@@ -1,0 +1,128 @@
+.booking-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1f2937 0, var(--color-bg) 50%, #000 100%);
+  padding: 20px;
+}
+
+.booking-card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.booking-card h1 {
+  text-align: center;
+  color: var(--color-text-main);
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.movie-details {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.movie-details h2 {
+  color: var(--color-text-main);
+  margin: 0;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--color-text-main);
+}
+
+.form-select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.form-hint {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.error-message {
+  background-color: var(--color-error-bg);
+  color: var(--color-error-text);
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.cancel-btn,
+.submit-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cancel-btn {
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--color-text-main);
+}
+
+.cancel-btn:hover {
+  background: rgba(15, 23, 42, 1);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-strong) 100%);
+  color: white;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(249, 115, 22, 0.5);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
